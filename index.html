@@ -18,6 +18,72 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg class="ui-icons" aria-hidden="true" width="0" height="0" focusable="false">
+    <symbol id="icon-audience" viewBox="0 0 24 24">
+      <path d="M7 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.5 19a4.5 4.5 0 0 1 7 0M13.5 19a4.5 4.5 0 0 1 7 0M12 19a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5" />
+    </symbol>
+    <symbol id="icon-goal" viewBox="0 0 24 24">
+      <path d="M12 4v16M4 12h16M6.5 6.5l11 11M17.5 6.5l-11 11" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2.5" />
+    </symbol>
+    <symbol id="icon-competency" viewBox="0 0 24 24">
+      <path d="M8 5h8l4 4v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+      <path d="M16 5v4h4M9 13h6M9 17h4" />
+    </symbol>
+    <symbol id="icon-outcomes" viewBox="0 0 24 24">
+      <path d="M5 12.5 9.5 17 19 7.5" />
+      <path d="M5 5h14M5 12h5M5 19h9" />
+    </symbol>
+    <symbol id="icon-modules" viewBox="0 0 24 24">
+      <rect x="4" y="4" width="7" height="7" rx="1.5" />
+      <rect x="13" y="4" width="7" height="7" rx="1.5" />
+      <rect x="4" y="13" width="7" height="7" rx="1.5" />
+      <rect x="13" y="13" width="7" height="7" rx="1.5" />
+    </symbol>
+    <symbol id="icon-labs" viewBox="0 0 24 24">
+      <path d="M10 3v5l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 17L14 8V3" />
+      <path d="M8 12h8" />
+    </symbol>
+    <symbol id="icon-benefits" viewBox="0 0 24 24">
+      <path d="M12 21s-6.5-3.8-8.5-8.1C1.6 9 3.7 5 8 5c2 0 3.1.9 4 2 1-.9 2-2 4-2 4.3 0 6.4 4 4.5 7.9C18.5 17.2 12 21 12 21Z" />
+    </symbol>
+    <symbol id="icon-plan" viewBox="0 0 24 24">
+      <rect x="4" y="5" width="16" height="15" rx="2" />
+      <path d="M8 3v4M16 3v4M7 11h10M7 15h6" />
+    </symbol>
+    <symbol id="icon-assessment" viewBox="0 0 24 24">
+      <path d="M6 4h12l2 3-8 13L4 7l2-3Z" />
+      <path d="M9 10h6M10 14h4" />
+    </symbol>
+    <symbol id="icon-hours" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 8v5l3 2" />
+    </symbol>
+    <symbol id="icon-infra" viewBox="0 0 24 24">
+      <path d="M4 18h16M6 18V8l6-4 6 4v10M10 18v-5h4v5" />
+    </symbol>
+    <symbol id="icon-software" viewBox="0 0 24 24">
+      <rect x="4" y="5" width="16" height="11" rx="2" />
+      <path d="M10 19h4M8 16h8" />
+    </symbol>
+    <symbol id="icon-template" viewBox="0 0 24 24">
+      <path d="M8 4h8l4 4v12H8a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+      <path d="M16 4v4h4M9 12h6M9 16h6" />
+    </symbol>
+    <symbol id="icon-format" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h10M4 17h13" />
+      <rect x="15" y="10" width="5" height="7" rx="1" />
+    </symbol>
+    <symbol id="icon-materials" viewBox="0 0 24 24">
+      <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H19v17H7.5A2.5 2.5 0 0 0 5 22V5.5Z" />
+      <path d="M5 5.5A2.5 2.5 0 0 1 7.5 8H19M9 11h6M9 15h6" />
+    </symbol>
+    <symbol id="icon-contact" viewBox="0 0 24 24">
+      <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" />
+      <path d="m5 7 7 6 7-6" />
+    </symbol>
+  </svg>
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Перейти к началу страницы">
@@ -41,13 +107,25 @@
     <main id="top">
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">Проект учебной программы</p>
+          <div class="hero-statusbar">
+            <span class="hero-status">Проект учебной программы</span>
+            <span class="hero-status hero-status--outline">Версия для согласования</span>
+            <span class="hero-status hero-status--outline">Формат: лендинг + PDF</span>
+          </div>
           <h1>Цифровая аналитика и улучшение бизнес-процессов в управленческом учете</h1>
           <p class="lead">
             Междисциплинарный курс, ориентированный на формирование у обучающихся
             практических навыков анализа процессов, интерпретации данных управленческого
             учета, работы в среде 1С и применения инструментов искусственного интеллекта.
           </p>
+
+          <div class="hero-titleplate">
+            <div class="hero-titleplate__seal" aria-hidden="true">CA</div>
+            <div class="hero-titleplate__text">
+              <strong>Учебно-методический макет программы</strong>
+              <span>Статичный веб-формат для презентации, согласования и печати</span>
+            </div>
+          </div>
 
           <div class="hero-actions">
             <a class="button" href="#modules">Структура программы</a>
@@ -104,14 +182,17 @@
 
       <section class="section governance-strip">
         <article class="governance-item">
+          <span class="governance-icon"><svg viewBox="0 0 24 24"><use href="#icon-format"/></svg></span>
           <span>Назначение программы</span>
           <strong>Факультативный курс / модуль ДПО / внутренняя корпоративная программа</strong>
         </article>
         <article class="governance-item">
+          <span class="governance-icon"><svg viewBox="0 0 24 24"><use href="#icon-goal"/></svg></span>
           <span>Ключевая логика</span>
           <strong>От описания бизнес-процесса к аналитическому обоснованию улучшений</strong>
         </article>
         <article class="governance-item">
+          <span class="governance-icon"><svg viewBox="0 0 24 24"><use href="#icon-materials"/></svg></span>
           <span>Сценарий использования</span>
           <strong>Публикация в веб-формате и печать как согласуемого документа</strong>
         </article>
@@ -145,7 +226,10 @@
 
       <section class="section" id="audience">
         <div class="section-heading">
-          <p class="eyebrow">Для кого курс</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-audience"/></svg></span>
+            <p class="eyebrow">Для кого курс</p>
+          </div>
           <h2>Целевая аудитория программы</h2>
           <p>
             Курс может быть адаптирован под высшее образование, дополнительное
@@ -173,7 +257,10 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Цель и результаты</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-goal"/></svg></span>
+            <p class="eyebrow">Цель и результаты</p>
+          </div>
           <h2>Формулировки, подходящие для учебного паспорта и согласования</h2>
         </div>
         <div class="grid-two">
@@ -200,7 +287,10 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Компетенции</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-competency"/></svg></span>
+            <p class="eyebrow">Компетенции</p>
+          </div>
           <h2>Проектные формулировки в логике рабочей программы дисциплины</h2>
           <p>
             Ниже приведены проектные формулировки профессиональных компетенций. Коды
@@ -258,7 +348,10 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Результаты освоения дисциплины</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-outcomes"/></svg></span>
+            <p class="eyebrow">Результаты освоения дисциплины</p>
+          </div>
           <h2>Индикаторы и практические результаты обучения</h2>
         </div>
         <div class="outcomes-grid">
@@ -299,7 +392,10 @@
 
       <section class="section" id="modules">
         <div class="section-heading">
-          <p class="eyebrow">Структура программы</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-modules"/></svg></span>
+            <p class="eyebrow">Структура программы</p>
+          </div>
           <h2>Пять взаимосвязанных модулей</h2>
           <p>
             Содержание выстроено от базового понимания процессов и данных к итоговому
@@ -414,7 +510,10 @@
 
       <section class="section" id="labs">
         <div class="section-heading">
-          <p class="eyebrow">Практические занятия</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-labs"/></svg></span>
+            <p class="eyebrow">Практические занятия</p>
+          </div>
           <h2>Лабораторные работы как основа практической части курса</h2>
           <p>
             Практическая подготовка реализуется в форме лабораторных работ. Каждая
@@ -454,7 +553,10 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Преимущества программы</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-benefits"/></svg></span>
+            <p class="eyebrow">Преимущества программы</p>
+          </div>
           <h2>Аргументы в пользу запуска и согласования</h2>
         </div>
         <div class="benefits-grid">
@@ -483,7 +585,10 @@
 
       <section class="section" id="plan">
         <div class="section-heading">
-          <p class="eyebrow">Тематический план</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-plan"/></svg></span>
+            <p class="eyebrow">Тематический план</p>
+          </div>
           <h2>Пример тематического плана на один семестр</h2>
           <p>
             Ниже приведен пример тематического распределения содержания по неделям.
@@ -575,7 +680,10 @@
 
       <section class="section" id="assessment">
         <div class="section-heading">
-          <p class="eyebrow">Контроль и оценивание</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-assessment"/></svg></span>
+            <p class="eyebrow">Контроль и оценивание</p>
+          </div>
           <h2>Формы контроля, оценочные средства и критерии оценивания</h2>
         </div>
         <div class="assessment-grid">
@@ -635,7 +743,10 @@
 
       <section class="section" id="hours">
         <div class="section-heading">
-          <p class="eyebrow">Объем дисциплины</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-hours"/></svg></span>
+            <p class="eyebrow">Объем дисциплины</p>
+          </div>
           <h2>Пример распределения часов для одного семестра</h2>
           <p>
             Ниже приведен рекомендуемый вариант распределения учебной нагрузки для
@@ -670,7 +781,10 @@
 
       <section class="section" id="infrastructure">
         <div class="section-heading">
-          <p class="eyebrow">Условия реализации</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-infra"/></svg></span>
+            <p class="eyebrow">Условия реализации</p>
+          </div>
           <h2>Материально-техническое обеспечение программы</h2>
         </div>
         <div class="infra-grid">
@@ -697,7 +811,10 @@
 
       <section class="section" id="software">
         <div class="section-heading">
-          <p class="eyebrow">ПО и ИБ-ограничения</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-software"/></svg></span>
+            <p class="eyebrow">ПО и ИБ-ограничения</p>
+          </div>
           <h2>Перечень программного обеспечения и требования информационной безопасности</h2>
         </div>
         <div class="software-grid">
@@ -725,7 +842,10 @@
 
       <section class="section" id="lab-templates">
         <div class="section-heading">
-          <p class="eyebrow">Шаблоны заданий</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-template"/></svg></span>
+            <p class="eyebrow">Шаблоны заданий</p>
+          </div>
           <h2>Типовая структура заданий для лабораторных работ</h2>
           <p>
             Ниже приведены заготовки, которые можно использовать как основу для
@@ -788,7 +908,10 @@
 
       <section class="section" id="formats">
         <div class="section-heading">
-          <p class="eyebrow">Формат реализации</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-format"/></svg></span>
+            <p class="eyebrow">Формат реализации</p>
+          </div>
           <h2>Варианты по длительности и структуре</h2>
         </div>
         <div class="grid-two">
@@ -815,7 +938,10 @@
 
       <section class="section" id="materials">
         <div class="section-heading">
-          <p class="eyebrow">Рекомендуемые материалы</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-materials"/></svg></span>
+            <p class="eyebrow">Рекомендуемые материалы</p>
+          </div>
           <h2>Литература по ключевым блокам программы</h2>
           <p>
             Подборка сгруппирована по тематическим блокам курса. Для удобства работы
@@ -1037,7 +1163,10 @@
 
       <section class="section contact-section" id="contacts">
         <div class="section-heading">
-          <p class="eyebrow">Контакты</p>
+          <div class="heading-meta">
+            <span class="section-icon"><svg viewBox="0 0 24 24"><use href="#icon-contact"/></svg></span>
+            <p class="eyebrow">Контакты</p>
+          </div>
           <h2>Контактные данные для связи и согласования программы</h2>
           <p>
             Ниже указаны контактные данные для обсуждения программы курса, согласования
