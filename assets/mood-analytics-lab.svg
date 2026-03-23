@@ -1,0 +1,59 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="102" y1="74" x2="1116" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F8F6"/>
+      <stop offset="1" stop-color="#FFF6EE"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="278" y1="188" x2="942" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F2ECE4"/>
+    </linearGradient>
+    <filter id="shadow2" x="122" y="82" width="956" height="604" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="24"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0901961 0 0 0 0 0.192157 0 0 0 0 0.235294 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="40" fill="url(#bg2)"/>
+  <circle cx="1050" cy="150" r="124" fill="#E5F1EC"/>
+  <circle cx="164" cy="600" r="142" fill="#F4E0D1"/>
+  <g filter="url(#shadow2)">
+    <rect x="178" y="138" width="844" height="492" rx="34" fill="url(#desk)"/>
+    <rect x="230" y="194" width="476" height="278" rx="28" fill="#FAF8F4"/>
+    <rect x="262" y="228" width="412" height="178" rx="22" fill="#FFFFFF" stroke="#E0E8E4"/>
+    <rect x="292" y="264" width="114" height="22" rx="11" fill="#DCECE7"/>
+    <rect x="292" y="304" width="150" height="22" rx="11" fill="#F2D8C9"/>
+    <rect x="292" y="344" width="94" height="22" rx="11" fill="#E3EAF0"/>
+    <path d="M494 354L540 314L586 332L626 272" stroke="#0F766E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="494" cy="354" r="11" fill="#C96D3A"/>
+    <circle cx="540" cy="314" r="11" fill="#0F766E"/>
+    <circle cx="586" cy="332" r="11" fill="#164E63"/>
+    <circle cx="626" cy="272" r="11" fill="#0F766E"/>
+    <rect x="314" y="430" width="308" height="16" rx="8" fill="#D4E1DD"/>
+
+    <rect x="738" y="196" width="232" height="216" rx="28" fill="#FFFFFF" stroke="#E1E6E0"/>
+    <rect x="770" y="232" width="70" height="70" rx="20" fill="#0F766E" opacity="0.1"/>
+    <path d="M792 270H818M805 257V283" stroke="#0F766E" stroke-width="5" stroke-linecap="round"/>
+    <rect x="858" y="242" width="82" height="14" rx="7" fill="#1D4E63" opacity="0.84"/>
+    <rect x="858" y="270" width="58" height="14" rx="7" fill="#7B8F97"/>
+    <rect x="770" y="330" width="170" height="14" rx="7" fill="#DCECE7"/>
+    <rect x="770" y="358" width="132" height="14" rx="7" fill="#F2D8C9"/>
+
+    <rect x="230" y="504" width="316" height="88" rx="26" fill="#FFFFFF" stroke="#E0E5DF"/>
+    <circle cx="280" cy="548" r="20" fill="#0F766E" opacity="0.12"/>
+    <path d="M270 548L278 556L292 540" stroke="#0F766E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="320" y="534" width="194" height="16" rx="8" fill="#DCECE7"/>
+    <rect x="320" y="562" width="142" height="14" rx="7" fill="#E3EAF0"/>
+
+    <rect x="580" y="462" width="390" height="130" rx="28" fill="#F4EEE5"/>
+    <rect x="616" y="500" width="54" height="54" rx="18" fill="#164E63"/>
+    <path d="M642 516C630 516 620 526 620 538C620 550 630 560 642 560C650 560 656 556 660 550L648 542C646 545 644 546 642 546C638 546 634 542 634 538C634 534 638 530 642 530C645 530 646 531 649 534L662 526C658 520 651 516 642 516Z" fill="#F7F3EC"/>
+    <rect x="694" y="508" width="236" height="14" rx="7" fill="#FFFFFF"/>
+    <rect x="694" y="536" width="188" height="14" rx="7" fill="#DCECE7"/>
+    <rect x="694" y="564" width="142" height="14" rx="7" fill="#F2D8C9"/>
+  </g>
+</svg>

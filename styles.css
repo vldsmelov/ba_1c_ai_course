@@ -688,10 +688,91 @@ label span {
 .quote-card,
 .architecture-card,
 .formal-card,
-.contact-card {
+.contact-card,
+.mood-break {
   background:
     linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 242, 234, 0.94)),
     white;
+}
+
+.mood-break {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: 24px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mood-break--lab {
+  grid-template-columns: minmax(360px, 1.05fr) minmax(0, 0.95fr);
+}
+
+.mood-break__copy {
+  position: relative;
+  z-index: 1;
+  padding: 18px 6px 18px 4px;
+}
+
+.mood-break__copy h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.mood-break__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.mood-break__media {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(244, 239, 231, 0.94)),
+    white;
+  box-shadow:
+    inset 0 0 0 1px rgba(23, 49, 60, 0.07),
+    0 20px 40px rgba(21, 37, 45, 0.08);
+}
+
+.mood-break__media img {
+  width: 100%;
+  border-radius: 22px;
+}
+
+.mood-break--process::after,
+.mood-break--lab::after,
+.mood-break--decision::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.mood-break--process::after {
+  width: 280px;
+  height: 280px;
+  right: -80px;
+  top: -120px;
+  background: radial-gradient(circle, rgba(15, 118, 110, 0.1), transparent 72%);
+}
+
+.mood-break--lab::after {
+  width: 260px;
+  height: 260px;
+  left: -80px;
+  bottom: -120px;
+  background: radial-gradient(circle, rgba(201, 109, 58, 0.12), transparent 72%);
+}
+
+.mood-break--decision::after {
+  width: 260px;
+  height: 260px;
+  right: -90px;
+  bottom: -130px;
+  background: radial-gradient(circle, rgba(22, 78, 99, 0.1), transparent 72%);
 }
 
 .quote-highlight {
@@ -1274,6 +1355,7 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .split-section,
   .grid-two,
   .document-columns,
+  .mood-break,
   .contact-layout {
     grid-template-columns: 1fr;
   }
@@ -1313,12 +1395,17 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
 
   .card,
   .module-card,
-  .document-sheet__inner {
+  .document-sheet__inner,
+  .mood-break__media {
     padding: 22px;
   }
 
   .hero-copy {
     padding: 28px 22px 24px;
+  }
+
+  .mood-break__copy {
+    padding: 4px 0 0;
   }
 
   h1 {
@@ -1407,6 +1494,7 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .print-section,
   .site-nav,
   .contact-section,
+  .mood-break,
   .hero-panel::before,
   .hero-panel::after {
     display: none !important;
