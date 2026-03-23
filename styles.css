@@ -170,6 +170,52 @@ button {
   overflow: hidden;
 }
 
+.section-group {
+  padding: 34px;
+}
+
+.section-group__intro {
+  max-width: 72rem;
+  margin-bottom: 0;
+}
+
+.section-group__intro h2 {
+  max-width: 18ch;
+}
+
+.section-group__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.section-group__block + .section-group__block,
+.section-group__block + .section-group__divider {
+  margin-top: 34px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.section-group__divider + .section-group__block {
+  margin-top: 34px;
+}
+
+.section-group__block > .section-heading {
+  max-width: 68rem;
+  margin-bottom: 22px;
+}
+
+.section-group__block > .section-heading h2 {
+  max-width: 22ch;
+  font-size: clamp(1.72rem, 2.45vw, 2.5rem);
+}
+
+.section-group__block > .section-heading p {
+  max-width: 70ch;
+}
+
+.section-group .section-image-divider {
+  margin-top: 0;
+}
+
 .section::before {
   display: none;
 }
