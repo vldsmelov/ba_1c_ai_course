@@ -407,6 +407,9 @@ label span {
 .reading-list,
 .resource-stack,
 .labs-grid,
+.competency-grid,
+.assessment-grid,
+.criteria-grid,
 .document-columns,
 .outcomes-grid {
   display: grid;
@@ -437,6 +440,16 @@ label span {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.competency-grid,
+.assessment-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.criteria-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
 .reading-list {
   grid-template-columns: 1fr;
   margin-top: 18px;
@@ -459,6 +472,10 @@ label span {
 .section-heading h2 {
   margin-top: 10px;
   margin-bottom: 12px;
+}
+
+.section-heading--compact {
+  margin-bottom: 10px;
 }
 
 .quote-card,
@@ -494,6 +511,59 @@ label span {
   border-radius: 14px;
   color: white;
   font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-warm), var(--accent));
+}
+
+.competency-card,
+.assessment-card {
+  min-height: 100%;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 242, 234, 0.94)),
+    white;
+}
+
+.competency-head {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.competency-code {
+  display: inline-grid;
+  place-items: center;
+  width: fit-content;
+  min-width: 72px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.competency-list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.competency-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.competency-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-warm), var(--accent));
 }
 
@@ -633,6 +703,77 @@ label span {
   background:
     linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 242, 234, 0.94)),
     white;
+}
+
+.plan-table {
+  padding: 10px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 242, 234, 0.94)),
+    white;
+}
+
+.plan-row {
+  display: grid;
+  grid-template-columns: 90px 1.6fr 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 16px 18px;
+  border-radius: 18px;
+}
+
+.plan-row:not(.plan-row--head):nth-child(even) {
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.plan-row--head {
+  color: var(--accent-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.plan-row span:first-child {
+  font-weight: 800;
+}
+
+.assessment-criteria {
+  margin-top: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 242, 234, 0.94)),
+    white;
+}
+
+.criteria-item {
+  display: grid;
+  gap: 8px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.1);
+}
+
+.criteria-item span {
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+.grading-scale {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+}
+
+.grading-scale p {
+  margin: 0 0 10px;
+}
+
+.grading-scale p:last-child {
+  margin-bottom: 0;
 }
 
 .reading-group {
@@ -967,8 +1108,15 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .reading-groups,
   .resource-lanes,
   .labs-grid,
+  .competency-grid,
+  .assessment-grid,
+  .criteria-grid,
   .outcomes-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .plan-row {
+    grid-template-columns: 80px 1.4fr 1fr 1fr;
   }
 }
 
@@ -1001,8 +1149,17 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .reading-groups,
   .resource-lanes,
   .labs-grid,
+  .competency-grid,
+  .assessment-grid,
+  .criteria-grid,
   .outcomes-grid {
     grid-template-columns: 1fr;
+  }
+
+  .plan-row,
+  .plan-row--head {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .print-section .print-header {
@@ -1072,6 +1229,9 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .reading-groups,
   .resource-lanes,
   .labs-grid,
+  .competency-grid,
+  .assessment-grid,
+  .criteria-grid,
   .document-columns,
   .outcomes-grid {
     display: block;
@@ -1080,6 +1240,10 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .hero-copy,
   .card,
   .module-card,
+  .plan-table,
+  .assessment-card,
+  .assessment-criteria,
+  .competency-card,
   .document-sheet__inner,
   .governance-item,
   .outcome-card {
@@ -1131,6 +1295,7 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .reading-item,
   .resource-item,
   .lab-note,
+  .criteria-item,
   .outcome-card {
     padding: 0;
     margin-top: 6px;
@@ -1139,9 +1304,26 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
     box-shadow: none;
   }
 
+  .plan-row:not(.plan-row--head) {
+    background: white;
+  }
+
+  .plan-row--head {
+    background: white;
+    padding: 0 0 8px;
+  }
+
+  .grading-scale {
+    padding: 0;
+    border-radius: 0;
+    background: white;
+    box-shadow: none;
+  }
+
   .module-number,
   .icon-badge,
-  .document-meta span {
+  .document-meta span,
+  .competency-code {
     width: auto;
     height: auto;
     padding: 0;
@@ -1159,6 +1341,8 @@ main > .section:nth-of-type(10) { animation-delay: 540ms; }
   .governance-item,
   .reading-group,
   .resource-column,
+  .plan-table,
+  .assessment-card,
   .outcome-card,
   .document-sheet__inner {
     break-inside: avoid;
