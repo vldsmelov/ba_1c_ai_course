@@ -1,0 +1,39 @@
+<svg width="880" height="640" viewBox="0 0 880 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="880" height="640" rx="36" fill="#FFFDF8"/>
+  <rect x="36" y="36" width="808" height="568" rx="28" fill="url(#paint0_linear)"/>
+  <circle cx="731" cy="132" r="80" fill="#D7EEE8"/>
+  <circle cx="153" cy="523" r="103" fill="#F3D6C6"/>
+  <path d="M126 218C126 198.118 142.118 182 162 182H464C483.882 182 500 198.118 500 218V284C500 303.882 483.882 320 464 320H162C142.118 320 126 303.882 126 284V218Z" fill="#FFFDF8"/>
+  <path d="M528 182C528 162.118 544.118 146 564 146H718C737.882 146 754 162.118 754 182V430C754 449.882 737.882 466 718 466H564C544.118 466 528 449.882 528 430V182Z" fill="#FFFDF8"/>
+  <path d="M126 362C126 342.118 142.118 326 162 326H464C483.882 326 500 342.118 500 362V466C500 485.882 483.882 502 464 502H162C142.118 502 126 485.882 126 466V362Z" fill="#FFFDF8"/>
+  <path d="M196 126L196 122C196 101.013 213.013 84 234 84H430C450.987 84 468 101.013 468 122V126" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <rect x="196" y="126" width="272" height="68" rx="18" fill="#164E63"/>
+  <text x="332" y="168" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">Курс</text>
+  <rect x="162" y="216" width="302" height="70" rx="18" fill="#0F766E"/>
+  <text x="313" y="259" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="700">Бизнес-процессы</text>
+  <rect x="162" y="362" width="302" height="58" rx="16" fill="#C96D3A"/>
+  <text x="313" y="398" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="700">Управленческий учет</text>
+  <rect x="162" y="434" width="126" height="44" rx="14" fill="#E8F4F1"/>
+  <text x="225" y="462" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="20" font-weight="700">1С</text>
+  <rect x="306" y="434" width="158" height="44" rx="14" fill="#F7E6DD"/>
+  <text x="385" y="462" text-anchor="middle" fill="#A34F20" font-family="Arial, sans-serif" font-size="20" font-weight="700">Показатели</text>
+  <rect x="560" y="184" width="162" height="66" rx="18" fill="#E8F4F1"/>
+  <text x="641" y="224" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="25" font-weight="700">ИИ</text>
+  <rect x="560" y="268" width="162" height="66" rx="18" fill="#D9EBF3"/>
+  <text x="641" y="308" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="25" font-weight="700">Аналитика</text>
+  <rect x="560" y="352" width="162" height="82" rx="18" fill="#FFF2E9"/>
+  <text x="641" y="390" text-anchor="middle" fill="#A34F20" font-family="Arial, sans-serif" font-size="23" font-weight="700">Проект</text>
+  <text x="641" y="419" text-anchor="middle" fill="#A34F20" font-family="Arial, sans-serif" font-size="23" font-weight="700">улучшения</text>
+  <path d="M500 252H544" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M500 394H544" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M544 252L532 240" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M544 252L532 264" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M544 394L532 382" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M544 394L532 406" stroke="#164E63" stroke-width="10" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="88" y1="72" x2="792" y2="568" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E9"/>
+      <stop offset="1" stop-color="#F1E7DB"/>
+    </linearGradient>
+  </defs>
+</svg>
