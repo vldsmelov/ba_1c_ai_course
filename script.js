@@ -17,14 +17,3 @@ for (const control of document.querySelectorAll("[data-scroll]")) {
     }
   });
 }
-
-const requestForm = document.getElementById("request-form");
-const formResponse = document.getElementById("form-response");
-
-if (requestForm && formResponse) {
-  requestForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formResponse.hidden = false;
-    formResponse.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  });
-}
