@@ -18,6 +18,7 @@
   --radius-md: 20px;
   --radius-sm: 14px;
   --content: 1220px;
+  --section-title-size: clamp(2.1rem, 2.9vw, 2.85rem);
 }
 
 *,
@@ -190,6 +191,32 @@ button {
   padding: 30px;
 }
 
+.insight-card,
+.governance-item,
+.outcome-card,
+.audience-card,
+.benefit-card,
+.formal-card,
+.competency-card,
+.assessment-card,
+.hours-card,
+.infra-card,
+.software-card,
+.template-card,
+.module-card,
+.reading-accordion,
+.reading-item,
+.lab-card,
+.lab-note,
+.criteria-item,
+.grading-scale,
+.contact-card,
+.contact-row {
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+}
+
 .hero {
   display: block;
 }
@@ -228,6 +255,11 @@ button {
 .lead-strong {
   color: var(--ink);
   font-weight: 800;
+}
+
+.quote-card h2 {
+  font-size: var(--section-title-size);
+  line-height: 1.08;
 }
 
 .hero-copy::before {
@@ -459,12 +491,9 @@ label span {
 .insight-card {
   padding: 18px;
   border-radius: 22px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(247, 242, 235, 0.72)),
-    white;
-  box-shadow:
-    inset 0 0 0 1px rgba(23, 49, 60, 0.08),
-    0 12px 24px rgba(21, 37, 45, 0.04);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
 }
 
 .governance-strip {
@@ -483,7 +512,7 @@ label span {
 }
 
 .governance-carousel__head h2 {
-  font-size: clamp(2.15rem, 3vw, 3rem);
+  font-size: var(--section-title-size);
 }
 
 .carousel-button {
@@ -579,6 +608,10 @@ label span {
   width: 46px;
   height: 46px;
   border-radius: 16px;
+}
+
+.governance-item .governance-icon {
+  display: none;
 }
 
 .section-icon {
@@ -716,6 +749,7 @@ label span {
   margin-top: 0;
   margin-bottom: 14px;
   line-height: 1.08;
+  font-size: var(--section-title-size);
 }
 
 .section-heading--compact {
@@ -758,6 +792,8 @@ label span {
 .mood-break__copy h2 {
   margin-top: 0;
   margin-bottom: 14px;
+  font-size: var(--section-title-size);
+  line-height: 1.08;
 }
 
 .mood-break__copy p:last-child {
@@ -768,12 +804,10 @@ label span {
   position: relative;
   z-index: 1;
   padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(23, 49, 60, 0.08);
   border-radius: 28px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 246, 240, 0.96));
-  box-shadow:
-    inset 0 0 0 1px rgba(23, 49, 60, 0.06),
-    0 10px 28px rgba(21, 37, 45, 0.06);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: none;
 }
 
 .mood-break__media img {
@@ -903,8 +937,7 @@ label span {
 }
 
 .formal-card__head .icon-badge {
-  margin-bottom: 0;
-  flex: 0 0 auto;
+  display: none;
 }
 
 .competency-card,
@@ -924,8 +957,7 @@ label span {
 }
 
 .competency-visual {
-  margin-bottom: 0;
-  flex: 0 0 auto;
+  display: none;
 }
 
 .competency-list {
@@ -1085,7 +1117,8 @@ label span {
   padding: 18px 20px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  box-shadow: none;
 }
 
 .lab-note strong {
@@ -1159,7 +1192,8 @@ label span {
   padding: 18px 20px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  box-shadow: none;
 }
 
 .criteria-item span {
@@ -1172,7 +1206,8 @@ label span {
   padding: 20px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  box-shadow: none;
 }
 
 .grading-scale p {
@@ -1191,8 +1226,7 @@ label span {
 }
 
 .template-head .icon-badge {
-  margin-bottom: 0;
-  flex: 0 0 auto;
+  display: none;
 }
 
 .template-card p {
@@ -1204,10 +1238,10 @@ label span {
 }
 
 .reading-accordion {
-  border: 1px solid rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(23, 49, 60, 0.08);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 246, 240, 0.96));
-  box-shadow: var(--shadow-soft);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: none;
   overflow: hidden;
 }
 
@@ -1285,7 +1319,8 @@ label span {
   padding: 20px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  box-shadow: none;
 }
 
 .reading-item__top {
@@ -1376,7 +1411,8 @@ label span {
   padding: 16px 18px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(23, 49, 60, 0.08);
+  border: 1px solid rgba(23, 49, 60, 0.08);
+  box-shadow: none;
 }
 
 .contact-label {
