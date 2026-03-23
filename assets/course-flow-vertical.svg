@@ -1,0 +1,93 @@
+<svg width="760" height="1180" viewBox="0 0 760 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="1180" rx="36" fill="#FFFDF8"/>
+  <rect x="34" y="34" width="692" height="1112" rx="30" fill="url(#bg)"/>
+
+  <text x="380" y="112" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="26">
+    От анализа процессов к проекту управленческого улучшения
+  </text>
+
+  <path d="M380 190V884" stroke="#D4E0E4" stroke-width="10" stroke-linecap="round" stroke-dasharray="8 18"/>
+
+  <g>
+    <circle cx="380" cy="252" r="84" fill="#164E63"/>
+    <text x="380" y="242" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+      Процессы
+    </text>
+    <text x="380" y="278" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      и роли
+    </text>
+    <rect x="94" y="204" width="218" height="96" rx="24" fill="#FFFFFF"/>
+    <text x="203" y="242" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      BPMN
+    </text>
+    <text x="203" y="272" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="18">
+      карта процесса
+    </text>
+  </g>
+
+  <g>
+    <circle cx="380" cy="428" r="84" fill="#0F766E"/>
+    <text x="380" y="418" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+      Данные
+    </text>
+    <text x="380" y="454" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      учета
+    </text>
+    <rect x="448" y="380" width="218" height="96" rx="24" fill="#FFFFFF"/>
+    <text x="557" y="418" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      Показатели
+    </text>
+    <text x="557" y="448" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="18">
+      метрики и потери
+    </text>
+  </g>
+
+  <g>
+    <circle cx="380" cy="604" r="84" fill="#C96D3A"/>
+    <text x="380" y="594" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="700">
+      1С
+    </text>
+    <text x="380" y="630" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      и отчеты
+    </text>
+    <rect x="94" y="556" width="218" height="96" rx="24" fill="#FFFFFF"/>
+    <text x="203" y="594" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      Витрины
+    </text>
+    <text x="203" y="624" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="18">
+      отчеты и регламенты
+    </text>
+  </g>
+
+  <g>
+    <circle cx="380" cy="780" r="84" fill="#B9D9E8"/>
+    <text x="380" y="770" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="28" font-weight="700">
+      ИИ и
+    </text>
+    <text x="380" y="806" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      аналитика
+    </text>
+    <rect x="448" y="732" width="218" height="96" rx="24" fill="#FFFFFF"/>
+    <text x="557" y="770" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+      Гипотезы
+    </text>
+    <text x="557" y="800" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="18">
+      выводы и сценарии
+    </text>
+  </g>
+
+  <rect x="110" y="912" width="540" height="132" rx="32" fill="#F4EEE5"/>
+  <text x="380" y="972" text-anchor="middle" fill="#164E63" font-family="Arial, sans-serif" font-size="32" font-weight="700">
+    Финал: практикум и защита проекта
+  </text>
+  <text x="380" y="1012" text-anchor="middle" fill="#5B6E75" font-family="Arial, sans-serif" font-size="22">
+    Реальный процесс, показатели, выводы и предложения
+  </text>
+
+  <defs>
+    <linearGradient id="bg" x1="90" y1="66" x2="652" y2="1116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F6F0E8"/>
+    </linearGradient>
+  </defs>
+</svg>
