@@ -125,9 +125,15 @@ button {
   gap: 12px;
 }
 
+.site-nav {
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
 .site-nav a {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .button {
@@ -1002,7 +1008,7 @@ label span {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .competency-visual {
@@ -1011,7 +1017,7 @@ label span {
 
 .competency-list {
   display: grid;
-  gap: 8px;
+  gap: 6px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1020,6 +1026,7 @@ label span {
 .competency-list li {
   position: relative;
   padding-left: 20px;
+  line-height: 1.55;
 }
 
 .competency-list li::before {
@@ -1091,6 +1098,14 @@ label span {
 
 .module-summary .module-head {
   margin-bottom: 0;
+}
+
+.module-head h3 {
+  font-size: 1.18rem;
+}
+
+.module-head p {
+  color: var(--muted);
 }
 
 .module-summary .reading-accordion__arrow {
